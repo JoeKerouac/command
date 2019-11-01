@@ -22,9 +22,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git@github.com:JoeKerouac/command.git</connection>
-        <developerConnection>scm:git@github.com:JoeKerouac/command.git</developerConnection>
-        <url>https://github.com/JoeKerouac/threadx</url>
+        <url>https://github.com/JoeKerouac/command</url>
+        <connection>scm:git:https://github.com/JoeKerouac/command.git</connection>
+        <developerConnection>scm:git:https://github.com/JoeKerouac/command.git</developerConnection>
     </scm>
 
     <developers>
