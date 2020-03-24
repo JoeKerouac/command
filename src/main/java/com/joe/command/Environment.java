@@ -30,4 +30,12 @@ public interface Environment {
      * @param value value
      */
     void put(String key, Object value);
+
+    /**
+     * 如果不存在则放入
+     * @param key 要放入的key
+     * @param value 要放入的value
+     * @return 旧值
+     */
+    Object putIfAbsent(String key, Object value);
 }
