@@ -13,12 +13,14 @@ public interface CommandContext {
 
     /**
      * 命令名
+     * 
      * @return 命令名
      */
     String name();
 
     /**
      * 参数列表
+     * 
      * @return 参数列表，可以为空
      */
     List<Param> params();

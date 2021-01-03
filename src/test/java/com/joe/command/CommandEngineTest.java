@@ -36,8 +36,7 @@ public class CommandEngineTest {
         run(engine -> {
             Command command = new Command() {
                 @Override
-                public String exec(CommandContext input, CommandEngine engine,
-                                   Environment environment) {
+                public String exec(CommandContext input, CommandEngine engine, Environment environment) {
                     return "param:" + input.params().get(0).value();
                 }
 
@@ -63,8 +62,7 @@ public class CommandEngineTest {
         run(engine -> {
             Command command = new Command() {
                 @Override
-                public String exec(CommandContext input, CommandEngine engine,
-                                   Environment environment) {
+                public String exec(CommandContext input, CommandEngine engine, Environment environment) {
                     return "param:" + input.params().get(0).value();
                 }
 
@@ -91,8 +89,7 @@ public class CommandEngineTest {
         run(engine -> {
             Command command = new Command() {
                 @Override
-                public String exec(CommandContext input, CommandEngine engine,
-                                   Environment environment) {
+                public String exec(CommandContext input, CommandEngine engine, Environment environment) {
                     return "param:" + input.params().get(0).value();
                 }
 
@@ -117,8 +114,7 @@ public class CommandEngineTest {
         run(engine -> {
             Command setCommand = new Command() {
                 @Override
-                public String exec(CommandContext input, CommandEngine engine,
-                                   Environment environment) {
+                public String exec(CommandContext input, CommandEngine engine, Environment environment) {
                     String[] pair = input.params().get(0).value().split("=");
                     environment.put(pair[0], pair[1]);
                     return "";
@@ -137,11 +133,10 @@ public class CommandEngineTest {
 
             Command echoCommand = new Command() {
                 @Override
-                public String exec(CommandContext input, CommandEngine engine,
-                                   Environment environment) {
+                public String exec(CommandContext input, CommandEngine engine, Environment environment) {
                     String value = input.params().get(0).value();
                     if (value.startsWith("$")) {
-                        return String.valueOf(environment.<Object> getEnv(value.substring(1)));
+                        return String.valueOf(environment.<Object>getEnv(value.substring(1)));
                     } else {
                         return value;
                     }

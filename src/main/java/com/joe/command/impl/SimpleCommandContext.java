@@ -18,7 +18,7 @@ public class SimpleCommandContext implements CommandContext {
     /**
      * 命令名
      */
-    private final String      name;
+    private final String name;
 
     /**
      * 参数列表

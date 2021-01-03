@@ -25,27 +25,27 @@ public class CommandEngineImpl implements CommandEngine {
     /**
      * 命令不存在时的提示语
      */
-    private static final String  CMD_NOT_EXIST_TEMP = "command not found: [{0}]";
+    private static final String CMD_NOT_EXIST_TEMP = "command not found: [{0}]";
 
     /**
      * 命令容器
      */
-    private Map<String, Command> container          = new ConcurrentHashMap<>();
+    private Map<String, Command> container = new ConcurrentHashMap<>();
 
     /**
      * 变更锁
      */
-    private final Object         modifyLock         = new Object();
+    private final Object modifyLock = new Object();
 
     /**
      * 命令解析
      */
-    private final CommandParser  parser;
+    private final CommandParser parser;
 
     /**
      * 命令环境
      */
-    private final Environment    environment;
+    private final Environment environment;
 
     public CommandEngineImpl(CommandParser parser, Environment environment) {
         this.parser = parser;

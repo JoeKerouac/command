@@ -22,14 +22,14 @@ public abstract class CommandException extends RuntimeException {
         this.message = message;
     }
 
-    protected CommandException(String message, Throwable cause, boolean enableSuppression,
-                               boolean writableStackTrace) {
+    protected CommandException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
         this.message = message;
     }
 
     /**
      * 获取对用户展示的异常提示
+     * 
      * @return 对用户展示的异常提示
      */
     public String getUserErrInfo() {

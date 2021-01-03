@@ -23,7 +23,7 @@ public class SimpleEnvironment implements Environment {
     @Override
     @SuppressWarnings("unchecked")
     public <T> T getEnv(String key) {
-        return (T) container.get(key);
+        return (T)container.get(key);
     }
 
     @Override

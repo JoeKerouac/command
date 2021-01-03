@@ -15,6 +15,7 @@ public class CommandEngineFactory {
 
     /**
      * 构建默认命令执行引擎
+     * 
      * @return 默认命令执行引擎，使用默认命令解析器
      */
     public static CommandEngine build() {
@@ -23,7 +24,9 @@ public class CommandEngineFactory {
 
     /**
      * 构建默认命令执行引擎
-     * @param parser 命令执行引擎使用的命令解析器
+     * 
+     * @param parser
+     *            命令执行引擎使用的命令解析器
      * @return 命令执行引擎
      */
     public static CommandEngine build(CommandParser parser) {
@@ -32,7 +35,9 @@ public class CommandEngineFactory {
 
     /**
      * 构建默认命令执行引擎
-     * @param environment 命令环境
+     * 
+     * @param environment
+     *            命令环境
      * @return 命令执行引擎
      */
     public static CommandEngine build(Environment environment) {
@@ -41,8 +46,11 @@ public class CommandEngineFactory {
 
     /**
      * 构建默认命令执行引擎
-     * @param parser 命令执行引擎使用的命令解析器
-     * @param environment 命令环境
+     * 
+     * @param parser
+     *            命令执行引擎使用的命令解析器
+     * @param environment
+     *            命令环境
      * @return 命令执行引擎
      */
     public static CommandEngine build(CommandParser parser, Environment environment) {
